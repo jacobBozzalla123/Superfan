@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="images/logo.jpg" rel="icon" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <title>SupetFan Project</title>
+  </head>
+  <body>
+    <div class="colum dim_grey">
+        <div class="colum2 orange">
+            <div class="box orange center-content">
+                <img src="images/weapon.png" class="clickable item" onclick="playerMelee()"/>
+              </div>
+              <div class="box blue center-content">
+                <img src="images/SDMG.png" class="clickable item" onclick="playerRange()"/>
+              </div>
+              <div class="box magenta center-content">
+                <img src="images/prism.png" class="clickable mana" onclick="playerMage()"/>
+              </div>
+        </div>
+       <div class="box2 grey center-content">
+        <img src="images/player.png" class="clickable player" id="player"onclick="player()"/>
+      </div>
+    </div>
+    <div class="largebox orange">
+      <div class="row light-grey">
+        <div class="box3 black center-content">
+          <img src="images/eye1.png" class="clickable" id="eye1" onclick="eyesound()" />
+        </div>
+        <div class="box3 black center-content">
+          <img src="images/ice1.png" class="clickable" id="ice1" onclick="icesound()"/>
+        </div>
+        <div class="box3 black center-content">
+          <img src="images/plant1.png" class="clickable plant" id="plant1" onclick="plantsound()"/>
+        </div>
+      </div>
+      <div class="row2 black center-content">
+          <div class="box4 black center-content"  >
+              <img src="images/phase1.png"  class="clickable button" id="damage" onclick="damage()"/>
+            </div>
+            <div class="box4 black center-content">
+              <img src="images/phase2.png"  class="none clickable button" id="phase2" onclick="damage2()"/>
+                </div>
+            <div class="box4 black center-content">
+                <img src="images/reset.png"  class="clickable button" id="reset" onclick="reset()"/>
+            </div>
+              
+    </div>
+    <audio src="sounds/boss1.mp3" type="audio/mp3" id="boss1"></audio>
+    <audio src="sounds/boss2.mp3" type="audio/mp3" id="boss2"></audio>
+    <audio src="sounds/boss3.mp3" type="audio/mp3" id="boss3"></audio>
+    <script src="script.js"></script>
+  </body>
+</html>
