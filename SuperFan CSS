@@ -1,0 +1,194 @@
+/* the 100vh and 100vw set the size of the body to fill the viewport (screen) */
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  margin: 0;
+}
+/* this class specifies shape */
+img {
+  max-height: 100%;
+  width: 100%;
+}
+.item {
+  max-height: 80%;
+  max-width: 80%;
+}
+.mana {
+  max-height: 80%;
+  max-width: 70%;
+}
+.player {
+  max-height: 95%;
+  max-width: 95%;
+}
+.plant {
+  max-height: 85%;
+  max-width: 80%;
+}
+.button {
+  max-height: 100%;
+  max-width: 100%;
+}
+.row {
+  display: flex;
+  height: 85%;
+  width: 100%;
+}
+.row2 {
+  height: 15%;
+  width: 100%;
+}
+.colum {
+  display: block;
+  height: 100%;
+  width: 20%;
+}
+.colum2 {
+  display: block;
+  height: 60%;
+  width: 100%;
+}
+.largebox {
+  display: block;
+  height: 100%;
+  width: 80%;
+}
+/* create your own shape for the children DIVs */
+.box {
+  height: 33.33%;
+  width: 100%;
+}
+.box2 {
+  height: 40%;
+  width: 100%;
+}
+.box3 {
+  height: 100%;
+  width: 33.33%;
+}
+.box4 {
+  height: 100px;
+  width: 100px;
+}
+.none {
+  display: none;
+}
+
+.clickable {
+  filter: brightness(85%) drop-shadow(2px 8px 3px);
+}
+.clickable:hover {
+  cursor: pointer;
+  filter: brightness(120%) drop-shadow(5px 10px 3px);
+  transform: scale(1.03);
+}
+.clickable:active {
+  filter: drop-shadow(0px 0px 3px);
+  transform: scale(0.9);
+}
+.center-content {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+/* these classes specify color */
+.dim_grey {
+  background-color: dimgrey;
+}
+.orange {
+  background-color: #fd5632;
+}
+.grey {
+  background-color: #d3d3d3;
+}
+.green {
+  background-color: green;
+}
+.red {
+  background-color: red;
+}
+.purple {
+  background-color: purple;
+}
+.blue {
+  background-color: rgb(26, 72, 224);
+}
+.magenta {
+  background-color: magenta;
+}
+.light-grey {
+  background-color: lightslategray;
+}
+.black {
+  background-color: black;
+}
+.white {
+  background-color: white;
+}
+/* styles if the screen is 600px or less */
+@media only screen and (max-width: 600px) {
+  body {
+    height: 100vh;
+    width: 100vw;
+    display: block;
+    overflow-x: hidden;
+  }
+  .box {
+    height: 33.33%;
+    width: 100%;
+  }
+  .box3 {
+    height: 33.33%;
+    width: 100%;
+  }
+  .box4 {
+    height: 60%;
+    width: 30%;
+  }
+  .colum {
+    display: block;
+    height: 100%;
+    width: 100%;
+  }
+  img {
+    height: 100%;
+    width: 65%;
+  }
+  .item {
+    max-height: 70%;
+    max-width: 50%;
+  }
+  .mana {
+    max-height: 70%;
+    max-width: 40%;
+  }
+  .player {
+    max-height: 90%;
+    max-width: 90%;
+  }
+  .plant {
+    max-height: 85%;
+    max-width: 80%;
+  }
+  .button {
+    max-height: 100%;
+    max-width: 100%;
+  }
+  .largebox {
+    display: block;
+    height: 100%;
+    width: 100%;
+  }
+  .row {
+    display: block;
+    height: 75%;
+    width: 100%;
+  }
+  .row2 {
+    display: flex;
+    height: 25%;
+    width: 100%;
+  }
+}
